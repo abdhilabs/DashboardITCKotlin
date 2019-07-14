@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".DashboardActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/donker"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/view1"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/logo_itc"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_amikom2"/>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:id="@+id/rlView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="140dp">
+
+            <View
+                    android:id="@+id/view2"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/bg_view"/>
+
+            <TextView
+                    android:id="@+id/tvWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/selamat_datang"
+                    android:textColor="@color/donker"
+                    android:textSize="30sp"/>
+
+            <TextView
+                    android:id="@+id/getUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvWelcome"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/donker"
+                    android:textSize="24sp"
+                    tools:text="ABDHI"/>
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/tvJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/data_profile"
+                android:textColor="@color/donker"
+                android:textSize="30sp"/>
+
+        <LinearLayout
+                android:id="@+id/llData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvJudul"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/nama"
+                        android:textColor="@color/donker"
+                        android:textSize="21sp"/>
+                <TextView
+                        android:id="@+id/getNama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/donker"
+                        android:textSize="18sp"
+                        tools:text="M Riza Abdhi P"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/email"
+                        android:textColor="@color/donker"
+                        android:textSize="21sp"/>
+
+                <TextView
+                        android:id="@+id/getEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/donker"
+                        android:textSize="18sp"
+                        tools:text="rizaabdhi@gmail.com"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/asal"
+                        android:textColor="@color/donker"
+                        android:textSize="21sp"/>
+
+                <TextView
+                        android:id="@+id/getAsal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/donker"
+                        android:textSize="18sp"
+                        tools:text="Magelang"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

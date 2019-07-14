@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DasboardITCKotlin</string>
+    <string name="nama">Nama</string>
+    <string name="email">Email</string>
+    <string name="asal">Asal</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="data_profile">Data Profile</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="simpan">SIMPAN</string>
+</resources>
