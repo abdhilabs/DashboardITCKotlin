@@ -11,7 +11,6 @@ class DashboardActivity : AppCompatActivity() {
     private lateinit var tvEmail: TextView
     private lateinit var tvAsal: TextView
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
@@ -30,6 +29,5 @@ class DashboardActivity : AppCompatActivity() {
         tvNama.text = strNama
         tvEmail.text = strEmail
         tvAsal.text = strAsal
-
     }
 }
