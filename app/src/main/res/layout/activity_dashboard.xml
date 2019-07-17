@@ -10,7 +10,7 @@
             android:layout_height="wrap_content">
 
         <ImageView
-                android:id="@+id/view1"
+                android:id="@+id/imageView1"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="@color/donker"/>
@@ -18,7 +18,7 @@
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/view1"
+                android:layout_alignTop="@id/imageView1"
                 android:layout_marginTop="24dp"
                 android:gravity="center"
                 android:orientation="horizontal">
@@ -36,17 +36,17 @@
         </LinearLayout>
 
         <RelativeLayout
-                android:id="@+id/rlView"
+                android:id="@+id/relativeLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="140dp">
 
-            <View
-                    android:id="@+id/view2"
+            <ImageView
+                    android:id="@+id/imageView2"
                     android:layout_width="300dp"
                     android:layout_height="150dp"
-                    android:background="@drawable/bg_view"/>
+                    android:background="@drawable/bg_image_view"/>
 
             <TextView
                     android:id="@+id/tvWelcome"
@@ -75,7 +75,7 @@
                 android:id="@+id/tvJudul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/rlView"
+                android:layout_below="@id/relativeLayout"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/montserrat_bold"
@@ -84,7 +84,6 @@
                 android:textSize="30sp"/>
 
         <LinearLayout
-                android:id="@+id/llData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvJudul"

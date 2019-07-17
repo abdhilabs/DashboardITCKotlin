@@ -51,7 +51,7 @@
                         android:id="@+id/eNama"
                         android:layout_width="312dp"
                         android:layout_height="45dp"
-                        android:background="@drawable/bg_etxt"
+                        android:background="@drawable/bg_edit_text"
                         android:inputType="text"/>
             </LinearLayout>
 
@@ -73,7 +73,7 @@
                         android:id="@+id/eUser"
                         android:layout_width="312dp"
                         android:layout_height="45dp"
-                        android:background="@drawable/bg_etxt"
+                        android:background="@drawable/bg_edit_text"
                         android:inputType="text"/>
             </LinearLayout>
 
@@ -95,7 +95,7 @@
                         android:id="@+id/eEmail"
                         android:layout_width="312dp"
                         android:layout_height="45dp"
-                        android:background="@drawable/bg_etxt"
+                        android:background="@drawable/bg_edit_text"
                         android:inputType="textEmailAddress"/>
             </LinearLayout>
 
@@ -117,7 +117,7 @@
                         android:id="@+id/eAsal"
                         android:layout_width="312dp"
                         android:layout_height="45dp"
-                        android:background="@drawable/bg_etxt"
+                        android:background="@drawable/bg_edit_text"
                         android:inputType="text"/>
             </LinearLayout>
         </LinearLayout>
