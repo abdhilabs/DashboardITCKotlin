@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var eNama: EditText
     private lateinit var eUser: EditText
     private lateinit var eEmail: EditText
