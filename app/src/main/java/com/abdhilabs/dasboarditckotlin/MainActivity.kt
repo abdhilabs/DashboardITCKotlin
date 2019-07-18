@@ -8,31 +8,31 @@ import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var eNama: EditText
-    private lateinit var eUser: EditText
-    private lateinit var eEmail: EditText
-    private lateinit var eAsal: EditText
-    private lateinit var btnSimpan: Button
+    private lateinit var nama: EditText
+    private lateinit var user: EditText
+    private lateinit var email: EditText
+    private lateinit var asal: EditText
+    private lateinit var simpan: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        eNama = findViewById(R.id.eNama)
-        eUser = findViewById(R.id.eUser)
-        eEmail = findViewById(R.id.eEmail)
-        eAsal = findViewById(R.id.eAsal)
+        nama = findViewById(R.id.eNama)
+        user = findViewById(R.id.eUser)
+        email = findViewById(R.id.eEmail)
+        asal = findViewById(R.id.eAsal)
 
-        btnSimpan = findViewById(R.id.btnSimpan)
-        btnSimpan.setOnClickListener {
-            val strNama = eNama.text.toString()
-            val strUser = eUser.text.toString()
-            val strEmail = eEmail.text.toString()
-            val strAsal = eAsal.text.toString()
+        simpan = findViewById(R.id.btnSimpan)
+        simpan.setOnClickListener {
+            val strNama = nama.text.toString()
+            val strUser = user.text.toString()
+            val strEmail = email.text.toString()
+            val strAsal = asal.text.toString()
 
             val btnSimpan = Intent(this, DashboardActivity::class.java)
-            btnSimpan.putExtra("USER", strUser)
             btnSimpan.putExtra("NAMA", strNama)
+            btnSimpan.putExtra("USER", strUser)
             btnSimpan.putExtra("EMAIL", strEmail)
             btnSimpan.putExtra("ASAL", strAsal)
             startActivity(btnSimpan)
